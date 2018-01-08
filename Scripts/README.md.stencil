@@ -1,10 +1,10 @@
-# 🏹 Archery Arrow
+{% extends "BASE_README.md.stencil" %}
 
-
+{% block subtitle %}
 Runs multiple scripts.
-For more information about Archery itself head to [vknabel/Archery](https://github.com/vknabel/Archery).
+{% endblock %}
 
-
+{% block example %}
 ```json
 {
     "scripts": {
@@ -41,18 +41,4 @@ Generate will execute all scripts in the given order.
 $ archery generate
 # Will run readme, format and docs
 ```
-
-
-## Available Options
-
-| Name | Type | Default |
-|------|------|---------|
-| run | `[String]` | Required |
-| scripts | `[String: AnyArrow]?` | `[:]` |
-
-## Contributors
-* Valentin Knabel, [@vknabel](https://github.com/vknabel), dev@vknabel.com, [@vknabel](https://twitter.com/vknabel) on Twitter
-
-
-## License
-Archery is available under the [](https://github.com/vknabel/archery/master/LICENSE) license.
+{% endblock %}
